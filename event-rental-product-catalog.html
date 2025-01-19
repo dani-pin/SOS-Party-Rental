@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Productos en Renta para Eventos en Florida">
+    <meta name="description"
+        content="Explora nuestro catálogo de mesas, sillas, utelería, arcos y más. Todo para bodas, eventos corporativos y celebraciones especiales en Florida.">
+    <meta name="keywords"
+        content="renta de productos para eventos en Florida, alquiler de mesas y sillas en Florida, alquiler de vajillas en Florida, renta de arcos para eventos en Florida, renta de artículos para bodas en Florida, renta de artículos para eventos corporativos en Florida, renta de artículos para celebraciones especiales en Florida, catálogo SOS Party Rental, organización de eventos en Florida, decoración de eventos en Florida, renta de artículos de decoración para cumpleaños en Florida, alquiler de artículos de decoración para eventos navideños en Florida">
+    <title>Alquiler de Artículos para Eventos en FL - SOS Party Rental</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./shared.css">
+    <link rel="stylesheet" href="./event-rental-product-catalog.css">
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="shared.js" defer></script>
+    <script src="event-rental-product-catalog.js" defer></script>
+</head>
+
+<body>
+    <nav class="site-nav-primary site-nav-home-page">
+        <div class="container site-nav-container">
+            <a href="./index.html">
+                <img class="site-nav-logo" src="images/sos-logo.png" alt="SOS Party Rental logo">
+            </a>
+
+            <div class="site-nav-links">
+                <a class="site-nav-link" href="./index.html#services">Servicios</a>
+                <a class="site-nav-link" href="./event-rental-product-catalog.html">Catálogo</a>
+                <a class="site-nav-link" href="./events-gallery-page.html">Galería</a>
+                <a class="site-nav-link" href="./about-me.html">Historia</a>
+                <a class="site-nav-link" href="./event-rental-product-catalog.html#site-footer">Contacto</a>
+                <div class="ml-20px">
+                    <a href="https://api.whatsapp.com/send?phone=19543268989"
+                        class="btn-secondary site-nav-btn">Escríbenos</a>
+                </div>
+            </div>
+
+            <button id="site-nav-hamburger" class="site-nav-hamburger" aria-label="Open navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 18L20 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M4 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-site-nav">
+            <a class="mobile-site-nav-link" href="./index.html#services">Servicios</a>
+            <a class="mobile-site-nav-link" href="./event-rental-product-catalog.html">Catálogo</a>
+            <a class="mobile-site-nav-link" href="./events-gallery-page.html">Galería</a>
+            <a class="mobile-site-nav-link" href="./about-me.html">Historia</a>
+            <a class="mobile-site-nav-link" href="./event-rental-product-catalog.html#site-footer">Contacto</a>
+            <a href="https://api.whatsapp.com/send?phone=19543268989"
+                class="btn-secondary mobile-site-nav-btn">Escríbenos</a>
+
+            <button id="mobile-site-nav-close" class="mobile-site-nav-close" aria-label="Close navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 5L5 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <main class="catalog-page-bg-leaves">
+        <section class="section catalog-page-section">
+            <div class="container">
+                <h1 class="h1">Catálogo de Productos</h1>
+
+                <p class="subheading catalog-description"> Ofrecemos una amplia variedad de productos en alquiler: desde
+                    elegantes vajillas
+                    y decoraciones con estilo hasta el equipo esencial para tus fiestas. Tenemos todo lo necesario para
+                    hacer realidad tu visión, a precios accesibles y ajustados a tu presupuesto. Con entregas puntuales,
+                    opciones flexibles y un servicio cálido y cercano, somos el aliado ideal para eventos de cualquier
+                    tamaño. ¡Déjanos ayudarte a crear momentos inolvidables sin complicaciones!.</p>
+
+                <div class="subheading section-subheading-title catalog-subheading">Categoría de Producto</div>
+
+                <div class="catalog-tabs">
+                    <div data-target="#catalog-cards-accessories" class="catalog-tab">Accesorios</div>
+                    <div data-target="#catalog-cards-tables-and-chairs" class="catalog-tab active">Mesas & Sillas</div>
+                    <div data-target="#catalog-cards-menaje" class="catalog-tab">Utilería</div>
+                </div>
+
+                <div id="catalog-cards-accessories" class="catalog-cards">
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/manteles-regulares.png"
+                                alt="Standard tablecloths">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Manteles Regulares</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad <br>Redondo y Rectangular</div>
+                                <div>$16.00</div>
+                            </div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad <br> Tamaño Extragrande</div>
+                                <div>$18.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/manteles-spandex.png" alt="Spandex tablecloths">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Manteles Spandex Rectangulares</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$16.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/caminos.png"
+                                alt="Table runners in assorted colors">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Caminos en Colores Variados</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$8.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/sobre-mantel.png"
+                                alt="Tablecloths in assorted colors">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Sobre-Mantel en Colores Variados</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$6.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/lazos-sillas.png"
+                                alt="Chair sashes in assorted colors">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Lazos Sillas en Colores Variados</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$3.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/servilletas.png"
+                                alt="Square napkins in assorted colors">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Servilletas Cuadradas en Colores Variados</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$1.50</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/arco-y-aro.png" alt="Event Arch and Hoop">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Arco y Aro</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$55.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="catalog-cards-tables-and-chairs" class="catalog-cards active">
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/silla-plegable.png" alt="White folding chair">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Silla Plegable Blanca</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$1.65</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/silla-resina.png" alt="White resin chair">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Silla Blanca de Resina</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$3.25</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/silla-chiavari-dorada.png"
+                                alt="Gold Chiavari chair">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Silla Chiavari Dorada</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad <br> Sin Cojín</div>
+                                <div>$5.50</div>
+                            </div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad <br> Con Cojín</div>
+                                <div>$6.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/silla-alta-chiavari-transparente.png"
+                                alt="Transparent Resin Barstool Chiavari Chair">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Silla Alta Chiavari de Resina Transparente</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$10.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/mesas-rectangulares.png"
+                                alt="Rectangular Plastic or Wooden Table">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Mesa Rectangular de Plástico o Madera</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad 6"</div>
+                                <div>$11.00</div>
+                            </div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad 8"</div>
+                                <div>$14.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/mesa-redonda.png" alt="White Round Table">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Mesa Redonda Blanca</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad 48"</div>
+                                <div>$11.00</div>
+                            </div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad 60"</div>
+                                <div>$14.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/mesa-cocktail-con-spandex.png"
+                                alt="Cocktail Table with Spandex Cover">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Mesa Cocktail con Spandex</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$25.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="catalog-cards-menaje" class="catalog-cards">
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/vajilla.png" alt="White dinnerware">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Vajilla Blanca</div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad <br> Plato Decorativo</div>
+                                <div>$1.00</div>
+                            </div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad <br> Plato Principal</div>
+                                <div>$0.90</div>
+                            </div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad <br> Plato Pastelero</div>
+                                <div>$0.80</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/cristaleria.png" alt="Glassware">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Cristalería</div>
+
+                            <div>Tipos:</div>
+
+                            <ul class="glasses-types-list">
+                                <li>Copa de Agua </li>
+                                <li>Copa de Vino Tinto o Blanco</li>
+                                <li>Copa Champaña</li>
+                                <li>Vaso Whiskero</li>
+                                <li>Vaso Coctelero</li>
+                            </ul>
+
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$0.90</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card border-radius-shadow-img">
+                        <div class="catalog-card-img-container">
+                            <img class="catalog-card-img" src="./images/cubiertos.png" alt="Silver cutlery set">
+                        </div>
+                        <div class="catalog-card-content">
+                            <div class="card-title">Juego de Cubiertos color plateado - Tenedor, Cuchillo & Cuchara
+                            </div>
+                            <div class="card-price">
+                                <div>Precio Por Unidad</div>
+                                <div>$2.50</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer" class="section site-footer">
+        <img class="site-footer-logo" src="images/logo-footer.png" alt="SOS Party Rental logo">
+
+        <h2 class="site-footer-heading">Contáctanos</h2>
+        <p class="footer-info"><a href="mailto:poplettsgrooming@gmail.com">sospartyrental@gmail.com</a></p>
+        <p class="footer-info"><a href="tel:+1 (954) 326-8989">+1 (954) 326-8989</a></p>
+        <address class="footer-info">
+            8131 Southgate Blvr N.
+            <br> Lauderdale, FL 33068
+        </address>
+        <div class="social-icons">
+            <a class="social-icon-link" href="https://www.facebook.com/sospartyrental" target="_blank"
+                aria-label="Visit SOS Party Rental on Facebook">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path
+                        d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+                    </path>
+                </svg>
+            </a>
+            <a class="social-icon-link" href="https://www.instagram.com/sosparty_services/" target="_blank"
+                aria-label="Visit SOS Party Rental on Instagram">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path
+                        d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z" />
+                </svg>
+            </a>
+        </div>
+        <p class="footer-info">
+            <span>&copy; SOS Party Rental | Website by</span>
+            <a class="site-footer-link" href="https://www.danielapinzonguzman.com">
+                Daniela Pinzon
+            </a>
+        </p>
+    </footer>
+
+    <!-- whatsapp button -->
+    <div class="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=19543268989" target="_blank" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+</body>
+
+</html>

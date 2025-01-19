@@ -1,0 +1,198 @@
+/* Navbar */
+.site-nav-home-page {
+    border-bottom: 0.5px var(--beige-100) solid;
+    background-color: var(--brown-500)
+}
+
+/* Hero section */
+.hero {
+    background-color: var(--brown-500);
+    background-image: url("./images/hero-bolas-disco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 205px;
+}
+
+.hero-info {
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero-subheading {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 570px;
+    margin-inline: auto;
+}
+
+/* Experience section */
+.experience-info-container,
+.experience-info,
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-info-subheading {
+    max-width: 170px;
+    color: var(--dark-blue-65);
+    margin-left: 0.938rem;
+}
+
+/* Services section */
+.services {
+    margin-top: 30px;
+    gap: 10px;
+}
+
+
+.services-section {
+    padding-top: 0;
+}
+
+.services-container {
+    background-color: var(--beige-200);
+    border-radius: 10px;
+    padding-block: 2.3rem;
+    padding-inline: 3.5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.img-services {
+    min-width: 255px;
+    padding-inline: 10px;
+}
+
+.service-title {
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+
+.service-subheading-description {
+    color: var(--dark-blue-65);
+    line-height: 163.2%;
+    padding-inline: 10px;
+    margin-bottom: 15px;
+}
+
+.service-link {
+    color: var(--orange);
+    font-size: 1.25rem;
+}
+
+/* Process section */
+.process-section-main-page {
+    background-image: url("./images/process-section-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Find us and Gallery Bg */
+.find-us-and-gallery-bg {
+    background-image: url("./images/leaves-gallery.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Gallery section */
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-info-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.813rem;
+}
+
+/* Find us section */
+.find-us-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3.75rem;
+}
+
+.find-us-info {
+    display: grid;
+    align-content: center;
+    gap: 1.5rem;
+    text-align: center;
+    color: var(--dark-blue-70);
+}
+
+.find-us-map {
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    aspect-ratio: 60/45;
+}
+
+/* FAQs */
+.faq-section {
+    background-image: url("./images/faq-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faqs-heading {
+    text-align: center;
+}
+
+.faqs-list {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.faq {
+    background-color: #ffffff;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    color: var(--font-colour-body-lighter);
+    overflow: hidden;
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease-out;
+    text-align: left;
+}
+
+.faq-header:hover,
+.faq.open .faq-header {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.faq-header-chevron {
+    width: 12px;
+    flex-shrink: 0;
+    margin-left: 1rem;
+    transition: transform 0.1s ease-out;
+}
+
+.faq.open .faq-header-chevron {
+    transform: rotateZ(-180deg);
+}
+
+.faq-body {
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+}
+
+.faq:not(.open) .faq-body {
+    display: none;
+}

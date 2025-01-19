@@ -1,0 +1,11 @@
+/* Hero */
+.bg-events-hero-img {
+    background-image: url("./images/special-ocassion-events-hero-img.png");
+}
+
+/* Corporate events services details */
+.corporate-events-services-details {
+    background-image: url("./images/special-occasion-leaves.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
