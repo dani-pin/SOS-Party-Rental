@@ -28,3 +28,19 @@
 .about-me-info>p:not(:first-child) {
     margin-top: 1.5rem;
 }
+
+@media(max-width:1007px) {
+    .about-me-section {
+        padding-top: 2rem;
+    }
+
+    .about-me-container {
+        gap: 2rem;
+    }
+}
+
+@media(max-width:555px) {
+    .about-me-container {
+        gap: 1.2rem;
+    }
+}

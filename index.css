@@ -7,7 +7,7 @@
 /* Hero section */
 .hero {
     background-color: var(--brown-500);
-    background-image: url("./images/hero-bolas-disco.png");
+    background-image: url("./images/hero-disco-balls.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

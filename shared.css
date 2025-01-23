@@ -462,6 +462,40 @@ button,
     text-align: center;
     width: 115%;
     z-index: 1;
+    position: relative;
+}
+
+.testimonial-controls {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    --swiper-theme-color: var(--orange);
+}
+
+.testimonial-controls .swiper-pagination,
+.testimonial-controls .swiper-button-prev,
+.testimonial-controls .swiper-button-next {
+    position: static;
+}
+
+.testimonial-controls .swiper-pagination {
+    width: auto;
+}
+
+.testimonial-controls .swiper-pagination-bullet {
+    vertical-align: middle;
+}
+
+.testimonial-controls .swiper-button-prev,
+.testimonial-controls .swiper-button-next {
+    margin-top: 5px;
+    height: 24px;
 }
 
 .google-review-stars {
@@ -474,6 +508,7 @@ button,
     height: var(--height);
     margin-top: 33px;
     margin-bottom: 12px;
+    margin-inline: auto;
 }
 
 .double-quote {
@@ -683,14 +718,25 @@ button,
     .subheading {
         font-size: 1.125rem;
     }
+
+    .site-footer-heading,
+    .footer-info,
+    .footer-info a,
+    .site-nav-link,
+    .site-nav-btn {
+        font-size: 1.063rem;
+    }
+
+    .site-footer-logo {
+        width: 140px;
+    }
+
+    .section {
+        padding-block: 4rem;
+    }
 }
 
 @media (max-width: 830px) {
-    .whatsapp-btn {
-        font-size: 2.2em;
-        padding: 8px 11px;
-    }
-
     .h1 {
         font-size: 2.55rem;
         line-height: 3.5rem;
@@ -698,5 +744,38 @@ button,
 
     .subheading {
         font-size: 1.1rem;
+    }
+
+    .whatsapp-btn {
+        font-size: 2.2em;
+        padding: 8px 11px;
+    }
+
+    .site-footer-logo {
+        width: 130px;
+    }
+
+    .section {
+        padding-block: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 555px) {
+
+    .site-footer-heading,
+    .footer-info,
+    .footer-info a {
+        font-size: 1rem;
+    }
+
+    .site-footer-logo {
+        width: 120px;
     }
 }
