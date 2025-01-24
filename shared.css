@@ -779,3 +779,17 @@ button,
         width: 120px;
     }
 }
+
+/* Swiper */
+.swiper-wrapper {
+    cursor: grab;
+}
+
+/* Swiper: fix width of slides */
+.swiper {
+    display: grid;
+}
+
+.swiper-wrapper {
+    min-width: 0;
+}
