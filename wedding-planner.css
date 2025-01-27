@@ -42,4 +42,6 @@
     padding: 35px 67px;
     text-align: center;
     margin-left: -15%;
+    z-index: 1;
+    position: relative;
 }

@@ -28,6 +28,18 @@ function isInternalPageLink(url) {
     );
 }
 
+// Testimonials Section
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 // FAQs
 const faqs = document.querySelectorAll(".faq")
 
