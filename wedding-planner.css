@@ -10,7 +10,7 @@
     background-size: cover;
 }
 
-/* Process section */
+/* Process Section Reverse */
 .process-container-reverse {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -31,7 +31,7 @@
     z-index: 1;
 }
 
-/* Testimonial section */
+/* Testimonial Section Reverse */
 .testimonial-info-container-reverse {
     background-color: var(--beige-200);
     border-radius: 10px;
@@ -44,4 +44,31 @@
     margin-left: -15%;
     z-index: 1;
     position: relative;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1007px) {
+
+    .process-container-reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .process-img-container-reverse {
+        max-width: 500px;
+        margin-inline: auto;
+    }
+
+
+    .testimonial-info-container-reverse {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+@media(min-width: 1008px) {
+
+    .process-img-container-reverse {
+        order: 1;
+    }
 }
