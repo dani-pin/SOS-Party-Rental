@@ -204,6 +204,11 @@ button,
 }
 
 /* Site nav */
+.site-nav-primary {
+    position: relative;
+    z-index: 10;
+}
+
 .site-nav-container {
     display: flex;
     align-items: center;
@@ -339,33 +344,45 @@ button,
 }
 
 /* Events Hero */
-.events-hero-bg-color {
-    height: 100vh;
+.events-hero {
     background-color: var(--brown-500);
-}
-
-.hero-events {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 379px;
+    flex-direction: column;
+    margin-top: -86px;
 }
 
-.hero-info-events {
+.events-hero-banner {
+    flex: 1;
+    min-height: 30vh;
+    max-height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.events-hero-content {
     max-width: 870px;
+    margin-inline: auto;
     text-align: center;
-}
-
-.bg-events-hero-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    background-position: center;
+    padding-block: 2.5rem;
+    padding-inline: 1rem;
+    flex: 1;
 }
 
 .events-hero-description {
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .events-hero-content {
+        padding-block: 4rem;
+    }
+
+    .events-hero-description {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 /* Process section */
