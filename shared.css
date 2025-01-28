@@ -479,7 +479,7 @@ button,
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 35px 67px;
+    padding: 3rem 1rem;
     text-align: center;
     width: 115%;
     z-index: 1;
@@ -882,6 +882,18 @@ button,
 
     .event-service-container-reverse .event-img-container {
         order: 1;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonial-container-heading {
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonial-info-container {
+        padding: 35px 67px;
     }
 }
 
