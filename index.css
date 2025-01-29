@@ -286,6 +286,7 @@
 
 .img-services img {
     object-fit: cover;
+    width: 100%;
     aspect-ratio: 3/2;
 }
 
@@ -313,6 +314,10 @@
 
     .services-container {
         padding-inline: 3.5rem;
+    }
+
+    .service-title {
+        font-size: 1.7rem;
     }
 }
 

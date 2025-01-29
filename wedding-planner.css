@@ -26,22 +26,6 @@
     z-index: 1;
 }
 
-/* Testimonial Section Reverse */
-.testimonial-info-container-reverse {
-    background-color: var(--beige-200);
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 35px 67px;
-    text-align: center;
-    margin-left: -15%;
-    z-index: 1;
-    position: relative;
-    margin-bottom: 40px;
-}
-
 @media (max-width: 1007px) {
 
     .process-container-reverse {
