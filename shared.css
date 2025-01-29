@@ -722,8 +722,11 @@ button,
 .event-gallery-grid {
     display: grid;
     gap: 1.75rem;
-    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0.8fr 0.6fr;
+    grid-template-areas:
+        "a b b c"
+        "d e f g";
 }
 
 .event-gallery-img-container {
@@ -836,6 +839,11 @@ button,
     .testimonial-info-container {
         width: 100%;
     }
+
+    .site-nav-logo {
+        height: 76px;
+    }
+
 }
 
 @media (max-width: 830px) {
@@ -924,6 +932,23 @@ button,
 
     .site-footer-logo {
         width: 120px;
+    }
+
+    .site-nav-logo {
+        height: 68px;
+    }
+}
+
+@media (max-width: 450px) {
+    .event-gallery-grid {
+        gap: 0.9rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.8fr 0.6fr 0.6fr 0.6fr;
+        grid-template-areas:
+            "a b b"
+            "c c d"
+            "e f f"
+            "g g g";
     }
 }
 

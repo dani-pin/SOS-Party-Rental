@@ -191,25 +191,9 @@
 }
 
 @media(max-width:480px) {
+
+    .hero-ball-1-container,
     .hero-ball-9-container {
-        display: none;
-    }
-
-    .hero-ball-5 {
-        left: 33%;
-    }
-
-    .hero-ball-6 {
-        left: 79%;
-    }
-
-    .hero {
-        padding-top: 240px;
-    }
-}
-
-@media(max-width:400px) {
-    .hero-ball-1-container {
         display: none;
     }
 
@@ -218,18 +202,28 @@
     }
 
     .hero-ball-5 {
-        left: 23%;
-        top: 0;
+        left: 25%;
+        top: -60px;
     }
 
     .hero-ball-6 {
         left: 77%;
     }
+
+    .hero {
+        padding-top: 240px;
+    }
 }
 
-@media(max-width:372px) {
-    .hero {
-        padding-top: 285px;
+@media(max-width:370px) {
+
+    .hero-ball-4-container,
+    .hero-ball-6-container {
+        display: none;
+    }
+
+    .hero-ball-5 {
+        left: 21%;
     }
 }
 
