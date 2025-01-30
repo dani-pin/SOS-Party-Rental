@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./shared.css">
     <link rel="stylesheet" href="./index.css">
@@ -116,26 +119,30 @@
 
             </div>
             <div class="container hero-info">
-                <h1 class="h1 hero-heading">Eventos diseñados para ser inolvidables</h1>
-                <p class="subheading hero-subheading">Transformamos tu visión en realidad con eventos únicos y
+                <h1 class="h1 hero-heading" data-aos="fade-up" data-aos-offset="0">Eventos diseñados para ser
+                    inolvidables</h1>
+                <p class="subheading hero-subheading" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+                    Transformamos tu visión en
+                    realidad con eventos únicos y
                     personalizados. Creamos experiencias extraordinarias adaptadas a tus necesidades.</p>
-                <a href="https://api.whatsapp.com/send?phone=19543268989" class="btn-primary">Hazlo realidad</a>
+                <a href="https://api.whatsapp.com/send?phone=19543268989" class="btn-primary" data-aos="fade-up"
+                    data-aos-delay="600" data-aos-offset="0">Hazlo realidad</a>
             </div>
         </section>
 
         <section class="section experience-section">
             <div class="container experience-info-container">
-                <div class="experience-info">
+                <div class="experience-info" data-aos="zoom-in">
                     <p class="h2">+726</p>
                     <p class="subheading experience-info-subheading">Clientes felices y sumando!</p>
                 </div>
 
-                <div class="experience-info">
+                <div class="experience-info" data-aos="zoom-in" data-aos-delay="300">
                     <p class="h2">19</p>
                     <p class="subheading experience-info-subheading">Años en la industria</p>
                 </div>
 
-                <div class="experience-info">
+                <div class="experience-info" data-aos="zoom-in" data-aos-delay="600">
                     <p class="h2">+1000</p>
                     <p class="subheading experience-info-subheading">Eventos hechos realidad</p>
                 </div>
@@ -214,7 +221,7 @@
             </div>
         </section>
 
-        <section class="section process-section">
+        <section class="section process-section-home-page">
             <div class="container process-container">
                 <div class="process-img-container">
                     <img class="border-radius-shadow-img" src="./images/kiss-wedding.png"
@@ -223,7 +230,7 @@
                             alt="A decorated ceremony room"></div>
                 </div>
 
-                <div class="process-info">
+                <div class="process-info" data-aos="fade-left" data-aos-duration="900">
                     <p class="subheading section-subheading-title">Trabaja con nosotros</p>
                     <h2 class="h2">Proceso</h2>
                     <div class="process-steps">
@@ -394,11 +401,14 @@
                         <a href="./events-gallery-page.html" class="btn-secondary">Ver más</a>
                     </div>
                     <div class="gallery-photos">
-                        <div><img class="border-radius-shadow-img" src="./images/gallery-photo-1.png"
+                        <div data-aos="zoom-in-up" data-aos-duration="600" data-aos-offset="0"><img
+                                class="border-radius-shadow-img" src="./images/gallery-photo-1.png"
                                 alt="Elegant wedding ceremony with beautiful decor and happy moments"></div>
-                        <div><img class="border-radius-shadow-img" src="./images/gallery-photo-2.png"
+                        <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-offset="0"><img
+                                class="border-radius-shadow-img" src="./images/gallery-photo-2.png"
                                 alt="Delicious cheese and charcuterie platter beautifully arranged"></div>
-                        <div><img class="border-radius-shadow-img" src="./images/gallery-photo-3.png"
+                        <div data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0"><img
+                                class="border-radius-shadow-img" src="./images/gallery-photo-3.png"
                                 alt="Elegant lanterns adorned with flowers placed beside a serene pool"></div>
                     </div>
                 </div>
@@ -578,6 +588,12 @@
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

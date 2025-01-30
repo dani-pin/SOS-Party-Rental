@@ -266,7 +266,7 @@
 }
 
 .services-section {
-    padding-top: 0;
+    padding-block: 0;
 }
 
 .services-container {
@@ -326,17 +326,25 @@
 }
 
 /* Process section */
-.process-section-main-page {
+.process-section-home-page {
     background-image: url("./images/process-section-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+
+}
+
+@media(max-width:1007px) {
+    .process-section-home-page {
+        background-image: none
+    }
 }
 
 /* Find us and Gallery Bg */
 .find-us-and-gallery-bg {
-    background-image: url("./images/leaves-gallery.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(./images/leaves-gallery.png);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
 }
 
 /* Gallery section */
@@ -394,9 +402,9 @@
 
 /* FAQs */
 .faq-section {
-    background-image: url("./images/faq-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(./images/faq-bg.png);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
 }
 
 .faqs-heading {

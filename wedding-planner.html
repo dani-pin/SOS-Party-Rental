@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./shared.css">
     <link rel="stylesheet" href="./wedding-planner.css">
@@ -89,8 +92,9 @@
             <img src="./images/wedding-hero-img.png" alt="wedding ceremony" class="events-hero-banner">
 
             <div class="events-hero-content">
-                <h1 class="h1">Wedding Planner</h1>
-                <p class="subheading events-hero-description">Nos dedicamos a hacer realidad tu visión, cuidando
+                <h1 class="h1" data-aos="fade-up" data-aos-offset="0">Wedding Planner</h1>
+                <p class="subheading events-hero-description" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-offset="0">Nos dedicamos a hacer realidad tu visión, cuidando
                     cada
                     detalle
                     para que tu día
@@ -99,19 +103,21 @@
                     momentos extraordinarios que se ajustan a tus sueños y necesidades, porque tu día especial
                     merece
                     ser tan único como tu historia.</p>
-                <a href="https://api.whatsapp.com/send?phone=19543268989" class="btn-primary">Contáctanos</a>
+                <a href="https://api.whatsapp.com/send?phone=19543268989" class="btn-primary" data-aos="fade-up"
+                    data-aos-delay="600" data-aos-offset="0">Contáctanos</a>
             </div>
         </section>
 
         <div class="wedding-services-details">
-            <section class="section">
+            <section class="section" style="overflow-x: hidden;">
                 <div class="container">
                     <div class="section-header">
                         <p class="subheading section-subheading-title">Detalles de Nuestras</p>
                         <h2 class="h2">Bodas</h2>
                     </div>
 
-                    <div class="event-service-container">
+                    <div class="event-service-container" data-aos="fade-left" data-aos-offset="0"
+                        data-aos-duration="900">
                         <div class="event-img-container"><img class="border-radius-shadow-img service-mobile-img"
                                 style="object-position: center 52%;" src="./images/wedding-detail-1.png"
                                 alt="Husband and wife celebrating their marriage ceremony">
@@ -142,7 +148,8 @@
                         </div>
                     </div>
 
-                    <div class="event-service-container event-service-container-reverse">
+                    <div class="event-service-container event-service-container-reverse" data-aos="fade-right"
+                        data-aos-anchor-placement="top-bottom" data-aos-duration="900">
                         <div class="event-img-container"><img
                                 class="border-radius-shadow-img ml-auto service-mobile-img"
                                 style="object-position: center 57%;" src="./images/wedding-detail-2.png"
@@ -168,7 +175,8 @@
                         </div>
                     </div>
 
-                    <div class="event-service-container">
+                    <div class="event-service-container" data-aos="fade-left" data-aos-offset="0"
+                        data-aos-duration="900">
                         <div class="event-img-container"><img class="border-radius-shadow-img service-mobile-img"
                                 style="object-position: center 18% ;" src="./images/wedding-detail-3.png"
                                 alt="Husband and wife celebrating their marriage ceremony">
@@ -192,7 +200,8 @@
 
                     </div>
 
-                    <div class="event-service-container event-service-container-reverse">
+                    <div class="event-service-container event-service-container-reverse" data-aos="fade-right"
+                        data-aos-anchor-placement="top-bottom" data-aos-duration="900">
                         <div class="event-img-container"><img
                                 class="border-radius-shadow-img ml-auto service-mobile-img"
                                 style="object-position: center 49%;" src="./images/wedding-detail-4.png"
@@ -214,7 +223,8 @@
                         </div>
                     </div>
 
-                    <div class="event-service-container">
+                    <div class="event-service-container" data-aos="fade-left" data-aos-offset="0"
+                        data-aos-duration="900">
                         <div class="event-img-container"><img class="border-radius-shadow-img service-mobile-img"
                                 style="object-position: center 18%;" src="./images/wedding-detail-5.png"
                                 alt="Husband and wife celebrating their marriage ceremony">
@@ -423,31 +433,38 @@
                 </div>
 
                 <div class="event-gallery-grid">
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: a;">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: a;"
+                        data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/wedding-gallery-1.png"
                             alt="Stunning wedding ceremony altar adorned with elegant floral arrangements">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: b;">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: b;"
+                        data-aos="zoom-in-up" data-aos-delay="150" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/wedding-gallery-2.png"
                             alt="Sandra, owner of SOS Party Rental, and her husband Alfredo with the newly married couple in the ceremony room">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: c;">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: c;"
+                        data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/wedding-gallery-3.png"
                             alt="Wedding ceremony room filled with plenty of lights and elegant decor">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: d;">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: d;"
+                        data-aos="zoom-in-up" data-aos-delay="450" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/wedding-gallery-4.png"
                             alt="Beautiful wedding cake surrounded by an assortment of desserts">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: e;">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: e;"
+                        data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/wedding-gallery-5.png"
                             alt="Stunning wedding ceremony altar adorned with elegant floral arrangements">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: f;">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: f;"
+                        data-aos="zoom-in-up" data-aos-delay="750" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/wedding-gallery-6.png"
                             alt="Stunning wedding ceremony altar adorned with elegant floral arrangements">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: g;">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: g;"
+                        data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/wedding-gallery-7.png"
                             alt="Elegant wedding ceremony altar with stunning decor and warm ambiance">
                     </div>
@@ -497,6 +514,12 @@
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

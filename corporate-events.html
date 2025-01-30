@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="./shared.css">
     <link rel="stylesheet" href="./corporate-events.css">
@@ -90,12 +94,14 @@
                 class="events-hero-banner">
 
             <div class="events-hero-content">
-                <h1 class="h1">Eventos Corporativos</h1>
-                <p class="subheading events-hero-description">Sabemos que un evento exitoso refleja positivamente a
+                <h1 class="h1" data-aos="fade-up" data-aos-offset="0">Eventos Corporativos</h1>
+                <p class="subheading events-hero-description" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-offset="0">Sabemos que un evento exitoso refleja positivamente a
                     tu organización y deja una impresión duradera. Nuestro equipo trabaja estrechamente contigo para
                     asegurar que cada elemento esté alineado con tu marca, misión y objetivos, brindando una
                     experiencia memorable para todos los invitados.</p>
-                <a href="https://api.whatsapp.com/send?phone=19543268989" class="btn-primary">Contáctanos</a>
+                <a href="https://api.whatsapp.com/send?phone=19543268989" class="btn-primary" data-aos="fade-up"
+                    data-aos-delay="600" data-aos-offset="0">Contáctanos</a>
             </div>
         </section>
 
@@ -117,7 +123,7 @@
         </section>
 
         <div class="corporate-events-services-details">
-            <section class="section">
+            <section class="section" style="overflow-x: hidden;">
                 <div class="container">
                     <div class="section-header">
                         <div class="heading-line"></div>
@@ -125,7 +131,8 @@
                         <h2 class="h2">Eventos</h2>
                     </div>
 
-                    <div class="event-service-container">
+                    <div class="event-service-container" data-aos="fade-left" data-aos-offset="0"
+                        data-aos-duration="900">
                         <div class="event-img-container"><img class="border-radius-shadow-img service-mobile-img"
                                 style="object-position: center 51%" src="./images/corporate-events-detail-1.png" alt="
                                 Decorated Corporate Event Space">
@@ -152,7 +159,8 @@
                         </div>
                     </div>
 
-                    <div class="event-service-container event-service-container-reverse">
+                    <div class="event-service-container event-service-container-reverse" data-aos="fade-right"
+                        data-aos-anchor-placement="top-bottom" data-aos-duration="900">
                         <div class="event-img-container"><img
                                 class="border-radius-shadow-img ml-auto service-mobile-img"
                                 style="object-position: center 35%" src="./images/corporate-events-detail-2.png"
@@ -178,7 +186,8 @@
                         </div>
                     </div>
 
-                    <div class="event-service-container">
+                    <div class="event-service-container" data-aos="fade-left" data-aos-offset="0"
+                        data-aos-duration="900">
                         <div class="event-img-container"><img class="border-radius-shadow-img service-mobile-img"
                                 style="object-position: center 25%" src="./images/corporate-events-detail-3.png"
                                 alt="A woman singing passionately while a man plays the saxophone beside her">
@@ -201,7 +210,8 @@
 
                     </div>
 
-                    <div class="event-service-container event-service-container-reverse">
+                    <div class="event-service-container event-service-container-reverse" data-aos="fade-right"
+                        data-aos-anchor-placement="top-bottom" data-aos-duration="900">
                         <div class="event-img-container"><img
                                 class="border-radius-shadow-img ml-auto service-mobile-img"
                                 style="object-position: center 44%" src="./images/corporate-events-detail-4.png"
@@ -414,31 +424,38 @@
                 </div>
 
                 <div class="event-gallery-grid">
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: a">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: a"
+                        data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/coporate-events-gallery-1.png" alt="
                         Sandra, owner of SOS Party Rental, organizing a corporate event">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: b">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: b"
+                        data-aos="zoom-in-up" data-aos-delay="150" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/coporate-events-gallery-2.png"
                             alt="Elegant dessert table beautifully arranged with assorted treats">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: c">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: c"
+                        data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/coporate-events-gallery-3.png"
                             alt="Sandra, owner of SOS Party Rental, organizing a corporate event">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: d">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: d"
+                        data-aos="zoom-in-up" data-aos-delay="450" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/coporate-events-gallery-4.png"
                             alt="Buffet table with a variety of dishes and elegant presentation">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: e">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: e"
+                        data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/coporate-events-gallery-5.png"
                             alt="Elegant event space for corporate gatherings with modern decor and comfortable seating">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: f">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: f"
+                        data-aos="zoom-in-up" data-aos-delay="750" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/coporate-events-gallery-6.png"
                             alt="Delicious ham and cheese platter elegantly arranged">
                     </div>
-                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: g">
+                    <div class="event-gallery-img-container border-radius-shadow-img" style="grid-area: g"
+                        data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="500" data-aos-offset="0">
                         <img class="event-gallery-img" src="./images/coporate-events-gallery-7.png"
                             alt="Spacious corporate party room with stylish decor and seating">
                     </div>
@@ -488,6 +505,12 @@
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
